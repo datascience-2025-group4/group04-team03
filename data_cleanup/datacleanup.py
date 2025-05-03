@@ -22,7 +22,6 @@ print(na_percent)
 
 
 
-
 #2. Löschen von NA-Spalten 
 
 # Umwandlung None in NA 
