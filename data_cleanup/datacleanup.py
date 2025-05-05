@@ -35,10 +35,18 @@ min_non_na_ratio = 0.15
 min_non_na_count = int(len(df) * min_non_na_ratio)
 
 # Spalten über dem Wert löschen 
-df_clean = df.dropna(axis=1, thresh=min_non_na_count)
+df_clean1 = df.dropna(axis=1, thresh=min_non_na_count)
 
 # Speichern als neue .tsv Datei 
-df_clean.to_csv("bereinigt.tsv", sep="\t", index=False)
+df_clean1.to_csv("bereinigt.tsv", sep="\t", index=False)
+
+
+
+# zu löschende Spalten benennen
+zu_loeschende_spalten = ["authors", "date"]
+
+# Löscheen der Spalten
+df_clean = df_clean1.drop(columns=[spalte for spalte in zu_loeschende_spalten if spalte in df_clean1.columns])
 
 # Ausgabe in Terminal 
 print(df_clean)
