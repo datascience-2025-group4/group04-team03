@@ -66,25 +66,32 @@ with open("df_clean.tsv", "w") as f:
 df1 = pd.read_csv("data/uniprot_data.tsv", sep="\t")
 df2 = pd.read_csv("data/ab_ag.tsv", sep="\t")
 
+#Vereinheitlichung der Spaltennamen 
 df1 = df1.rename(columns={"From": "pdb"})
 df1["pdb"] = df1["pdb"].str.lower().str.strip()
 
-# Optional: Spaltennamen vereinheitlichen (z. B. alles klein)
-df1.columns = df1.columns.str.lower()
-df2.columns = df2.columns.str.lower()
 
 # Standardisieren der PDB-ID-Spalte (z. B. alles klein, keine Leerzeichen)
 df1["pdb"] = df1["pdb"].str.lower().str.strip()
 df2["pdb"] = df2["pdb"].str.lower().str.strip()
 
-# 1. Gemeinsame PDB-IDs
-gemeinsam = pd.merge(df1, df2, on="pdb")
-print("Gemeinsame Einträge:", len(gemeinsam))
+# Nur eindeutige PDB-Einträge behalten
+df1_unique = df1.drop_duplicates(subset="pdb")
+df2_unique = df2.drop_duplicates(subset="pdb")
 
-# 2. Nur in df1 (uniprot_data)
-nur_in_df1 = df1[~df1["pdb"].isin(df2["pdb"])]
+# Vergleich der PDB-Codes als Mengen
+pdb_df1 = set(df1_unique["pdb"])
+pdb_df2 = set(df2_unique["pdb"])
+
+gemeinsame = pdb_df1 & pdb_df2
+nur_in_df1 = pdb_df1 - pdb_df2
+nur_in_df2 = pdb_df2 - pdb_df1
+
+# Ausgabe
+print("Gemeinsame PDB-Codes:", len(gemeinsame))
 print("Nur in UniProt:", len(nur_in_df1))
-
-# 3. Nur in df2 (ab_ag_tsv)
-nur_in_df2 = df2[~df2["pdb"].isin(df1["pdb"])]
 print("Nur in ab_ag_tsv:", len(nur_in_df2))
+
+#Überprüfung der Anzahl an nicht doppelten Einträgen in ab_ag.tsv
+anzahl_eindeutiger_pdb_df2 = df2["pdb"].drop_duplicates().shape[0]
+print("Eindeutige PDB-Einträge in df2:", anzahl_eindeutiger_pdb_df2)
