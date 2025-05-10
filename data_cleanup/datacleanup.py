@@ -95,3 +95,43 @@ print("Nur in ab_ag_tsv:", len(nur_in_df2))
 #Überprüfung der Anzahl an nicht doppelten Einträgen in ab_ag.tsv
 anzahl_eindeutiger_pdb_df2 = df2["pdb"].drop_duplicates().shape[0]
 print("Eindeutige PDB-Einträge in df2:", anzahl_eindeutiger_pdb_df2)
+
+
+
+# verschiedene methods von ab_ag.tsv
+anzahl_methoden = df2["method"].nunique()
+print("Anzahl unterschiedlicher Methoden:", anzahl_methoden)
+
+unique_methods = df2["method"].dropna().unique()
+for method in unique_methods:
+    print(method)
+
+#wie oft kommen die einzenlen Methods vor ? 
+method_counts = df2["method"].value_counts(dropna=False)
+print(method_counts)
+
+
+# Anzahl und Namen der verschiedenen heavy chain subclasses
+unique_heavy_subclasses = df2['heavy_subclass'].dropna().unique()
+print("Anzahl verschiedener Heavy-Subklassen:", len(unique_heavy_subclasses))
+print("Heavy-Subklassen:", unique_heavy_subclasses)
+
+# Anzahl und Namen der verschiedenen light chain subclasses
+unique_light_subclasses = df2['light_subclass'].dropna().unique()
+print("Anzahl verschiedener Light-Subklassen:", len(unique_light_subclasses))
+print("Light-Subklassen:", unique_light_subclasses)
+
+
+
+
+# Kombinationen aus heavy_subclass und light_subclass
+kombinationen = df2[["heavy_subclass", "light_subclass"]].dropna()
+
+# Einzigartige Kombinationen zählen
+anzahl_kombinationen = kombinationen.drop_duplicates().shape[0]
+
+print("Anzahl verschiedener Heavy-Light-Subklassen-Kombinationen:", anzahl_kombinationen)
+
+# Optional: Auch alle Kombinationen anzeigen
+print("\nKombinationen:")
+print(kombinationen.drop_duplicates())
