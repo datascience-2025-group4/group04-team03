@@ -4,7 +4,7 @@ import numpy as np
 
 #Bereinigung der Tabelle ab_ag.tsv
 # TSV Datei laden (mit absolutem path)
-df = pd.read_csv("/Users/annika/Downloads/ab_ag.tsv", sep="\t")
+df = pd.read_csv("../data/ab_ag.tsv", sep="\t")
 
 
 # 1. Übersicht über Spalten 
