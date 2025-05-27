@@ -63,8 +63,8 @@ with open("df_clean.tsv", "w") as f:
 #Vergleichen der uniprot data und ab_ag.tsv
 
 # Einlesen der Dateien (Passe Pfade/Spaltennamen ggf. an)
-df1 = pd.read_csv("data/uniprot_data.tsv", sep="\t")
-df2 = pd.read_csv("data/ab_ag.tsv", sep="\t")
+df1 = pd.read_csv("..data/uniprot_data.tsv", sep="\t")
+df2 = pd.read_csv("..data/ab_ag.tsv", sep="\t")
 #Vereinheitlichung der Spaltennamen 
 df1 = df1.rename(columns={"From": "pdb"})
 df1["pdb"] = df1["pdb"].str.lower().str.strip()
