@@ -196,3 +196,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Ignore alignment and data output files
+*.csv
+*.aln
