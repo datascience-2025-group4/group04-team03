@@ -200,3 +200,4 @@ cython_debug/
 # Ignore alignment and data output files
 *.csv
 *.aln
+*.fasta
