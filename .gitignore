@@ -201,3 +201,4 @@ cython_debug/
 *.csv
 *.aln
 *.fasta
+blasting/MSA_supervised_learning.ipynb
