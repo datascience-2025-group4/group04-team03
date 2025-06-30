@@ -224,3 +224,5 @@ tmp/
 group04-team03/blasting/mmseqs2_EVEscape/db
 blasting/MSA_supervised_learning.ipynb
 interproscan*/
+
+clu_omicron_vs_pdb.*
