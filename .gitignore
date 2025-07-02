@@ -198,6 +198,8 @@ cython_debug/
 .cursorindexingignore
 
 # Ignore alignment and data output files
+*.png
+*.tsv
 *.csv
 *.aln
 *.fasta
@@ -227,4 +229,4 @@ interproscan*/
 
 clu_omicron_vs_pdb.*
 *Zone.Identifier
-group04-team03/blasting/domain_analysis/script/temp
+temp*/
