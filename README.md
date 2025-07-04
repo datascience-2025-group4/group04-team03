@@ -47,7 +47,7 @@ Storing our diffrent approaches,  we created three sub-folders, in **blasting** 
   It contains the aa seq. analysis of light chains and heavy chains, in diffrent documents: 
 
  - *heavy chains*: 
-    all code for plots shwon on the poster can be found in **heavy_result**
+    all code for plots shown on the poster can be found in **heavy_result**
     the rest is stored in:**genfam_sequences.ipynb**, **consensus_genfam.ipynb** and **antigens_h_chains.ipynb**
  
  - *light chains*: 
