@@ -14,7 +14,7 @@ _Bendedikt _
 
 
 
-Tutor: _Enno Scäfer_ ([])    
+Tutor: _Enno Schäfer_ ([])    
 
 
 Research Question
@@ -27,20 +27,29 @@ Furthermore ...
 
 Repository Structure
 -----------------------------
+First of all: We decided to include all files and data necessary to run the codespaces leading to our results in the repository. 
+This way no external data needs to be downloaded in order to run the code.
+
+Our repository consists of 5 folders:
+
+- data 
+- data_cleanup
+- documentation
+- blasting 
+
+
 
 All important results and plots can be found in the folder **blasting**
-Storing our diffrent approaches,  we created serveral sub-folders, in **blasting** to keep it structered. 
+Storing our diffrent approaches,  we created three sub-folders, in **blasting** to keep it structered. 
 
 - **consensus_sequences**: 
-  
+  In this folder all results are stored based on heavy/light chain consensus sequences, further processed with multiple sequence alignment and clustering approaches to assign antigen species to specific antibody gene families. 
+  It contains the aa seq. analysis of light chains and heavy chains, in diffrent documents: 
 
-
-  This folder contains the aa seq. analysis of light chains and heavy chains, in diffrent documents: 
+ - *heavy chains*: 
+    all code for plots shwon on the poster can be found in **heavy_result**
+    the rest is stored in:**genfam_sequences.ipynb**, **consensus_genfam.ipynb** and **antigens_h_chains.ipynb**
  
-  - *heavy chains*: 
-    **consensus_genfam.ipynb** holds the result "dendogram of gene families based on consensus sequences"
-    **antigens_h_chains.ipynb** holds the result "dendogram of gene families based on antigen species profile"
-
  - *light chains*: 
 
 
@@ -66,8 +75,8 @@ Covering the mandatory aspects of the project
 Our project was supposed to contain the following elements. Here, we list which sub-topic covers which mandatory aspect: 
 - **descriptive statistics** about the datasets: Comparability of p53 Datasets
 - **graphical representations**: all sub-topics
-- **dimension reduction** analysis (PCA, clustering or k-means): Data exploration
-- **statistical tests** (t-test, proportion tests etc): Domain comparison
+- **dimension reduction** analysis (PCA, clustering or k-means): Multiple sequence alignment
+- **statistical tests** (t-test, proportion tests etc): Domain analysis
 - We did not implement a **linear regression**, which we discussed with our tutor Enno Schäfer beforehand.
 
 
