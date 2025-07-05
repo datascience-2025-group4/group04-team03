@@ -1,4 +1,6 @@
-# group04-team03
+# TODO Title!!!
+
+# group04-team03:
 # Topic 04, Team 03: 
 
 Contributors
@@ -8,18 +10,16 @@ Tom Straube, Jurek Wunderlich, Annika Stöhr, Sandra Barth
 
 Supervisor
 ----------
-_Prof. Dominik Niopek_  ([dominik.niopek@uni-heidelberg.de])  
-_Jan Mathony_  ([jan.mathony@tu-darmstadt.de]) 
-_Bendedikt _ 
+_Prof. Dominik Niopek_  ([dominik.niopek@uni-heidelberg.de]) 
+_Benedict Wolf_([benedict.wolf@uni-heidelberg.de])
+_Jan Mathony_  ([jan.mathony@uni-heidelberg.de])
 
-
-
-Tutor: _Enno Schäfer_ ([])    
+Tutor: _Enno Schäfer_ ([enno.schaefer@stud.uni-heidelberg.de])    
 
 
 Research Question
 ----------
-Our group´s goal was to explore the connection between antibody gene families  and the antigen species they target. 
+Our group´s goal was to explore the connection between antibody gene families and the antigen species they target. 
 To do so, we mainly focused on analysing the aminoacid sequence of respective structures, assigning variable domains and CDR regions. 
 With this approach we hoped to assing clusters to gene families, which target the same antigen species.
 Furthermore ...
@@ -28,7 +28,7 @@ Furthermore ...
 Repository Structure
 -----------------------------
 First of all: We decided to include all files and data necessary to run the codespaces leading to our results in the repository. 
-This way no external data needs to be downloaded in order to run the code.
+This way no external data apart form the nesessary packages needs to be downloaded in order to run the code.
 
 Our repository consists of 5 folders:
 
@@ -36,11 +36,10 @@ Our repository consists of 5 folders:
 - data_cleanup
 - documentation
 - blasting 
-
-
+- archieve
 
 All important results and plots can be found in the folder **blasting**
-Storing our diffrent approaches,  we created three sub-folders, in **blasting** to keep it structered. 
+Storing our diffrent approaches, we created three sub-folders, in **blasting** to keep it structered. 
 
 - **consensus_sequences**: 
   In this folder all results are stored based on heavy/light chain consensus sequences, further processed with multiple sequence alignment and clustering approaches to assign antigen species to specific antibody gene families. 
@@ -60,6 +59,16 @@ Storing our diffrent approaches,  we created three sub-folders, in **blasting** 
 
 
 - **domain_analysis**: 
+This file contains the "Domain-Based Gene Family Analysis with InterProScan" which aims to detect short conserved amino acid motifs in domains of the light chain of immunoglobulins. And evaluates their association with gene family classification and antigen specificty.
+
+To create the charts used in the poster presentation only the files lchains_1_ipr.tsv and master_df_1_light_antigen_category.csv are nesessary, these and the charts are uploaded into our teams github repository.
+
+To learn about the insights our results provide open the jupyter notebook domain_analysis in the blasting folder.
+
+
+TODO
+- Force push pictures
+
 - **Multiple Sequence Alignment**: 
 
 
