@@ -70,7 +70,14 @@ TODO
 - Force push pictures
 
 - **Multiple Sequence Alignment**: 
+This folder includes all results based on Multiple Sequence Alignment. The goal of this section was to examine a potential correlation between the antigen species targeted by an antibody and the amino acid sequence of the antibody.
 
+The files to generate the plots used on the poster have already been pushed, to generate the plots, simply run the code in the file Visualization.ipynb. The input FASTA files for Multiple Sequence Alignment have also been pushed. To reproduce the analysis, sequentially run:
+
+ Clustal_Omega.ipynb - performs Multiple Sequence Alignment
+ distance_matrix.ipynb - generates distance matrix based on MSA
+ PCA_Clustering.ipynb - reduces dimensions of the distance matrix with PCA and then clusters the data using kmeans clustering
+ antigen_sequence_correlation.ipynb - Analyzes the correlation between the MSA based clustering and the targeted antigen species
 
 
 
@@ -82,10 +89,10 @@ TODO
 Covering the mandatory aspects of the project
 ------------
 Our project was supposed to contain the following elements. Here, we list which sub-topic covers which mandatory aspect: 
-- **descriptive statistics** about the datasets: Comparability of p53 Datasets
+- **descriptive statistics** about the datasets: Comparability of p53 Datasets (Das müssen wir noch ändern lol)
 - **graphical representations**: all sub-topics
-- **dimension reduction** analysis (PCA, clustering or k-means): Multiple sequence alignment
-- **statistical tests** (t-test, proportion tests etc): Domain analysis
+- **dimension reduction** analysis (PCA, clustering or k-means): Multiple Sequence Alignment
+- **statistical tests** (t-test, proportion tests etc): Domain analysis, Multiple Sequence Alignment
 - We did not implement a **linear regression**, which we discussed with our tutor Enno Schäfer beforehand.
 
 
