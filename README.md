@@ -22,7 +22,9 @@ Research Question
 Our group´s goal was to explore the connection between antibody gene families and the antigen species they target. 
 To do so, we mainly focused on analysing the aminoacid sequence of respective structures, assigning variable domains and CDR regions. 
 With this approach we hoped to assing clusters to gene families, which target the same antigen species.
-Furthermore heavy and light chains were observed separately, clustering them based on the consensus sequences - the calculated sequence based on the most frequent amino acid residues in each sequence within the gene family. 
+As a last step, we also carried out domain analysis with Interpo scan. 
+
+
 
 
 Repository Structure
@@ -85,8 +87,6 @@ The files to generate the plots used on the poster have already been pushed, to 
 
 
 
-
-
 Covering the mandatory aspects of the project
 ------------
 Our project was supposed to contain the following elements. Here, we list which sub-topic covers which mandatory aspect: 
@@ -97,14 +97,8 @@ Our project was supposed to contain the following elements. Here, we list which 
 - We did not implement a **linear regression**, which we discussed with our tutor Enno Schäfer beforehand.
 
 
-Additional files and folders
----------
-files for result code running 
-
-
-
 
 
 Download the datasets worked on
 ----------
-links for this folder 
+the ab_ag.tsv can be downloadet here https://heibox.uni-heidelberg.de/d/ad23ebb995a04b138ee9/ 
