@@ -22,7 +22,7 @@ Research Question
 Our group´s goal was to explore the connection between antibody gene families and the antigen species they target. 
 To do so, we mainly focused on analysing the aminoacid sequence of respective structures, assigning variable domains and CDR regions. 
 With this approach we hoped to assing clusters to gene families, which target the same antigen species.
-Furthermore ...
+Furthermore heavy and light chains were observed separately, clustering them based on the consensus sequences - the calculated sequence based on the most frequent amino acid residues in each sequence within the gene family. 
 
 
 Repository Structure
@@ -56,7 +56,7 @@ Storing our diffrent approaches, we created three sub-folders, in **blasting** t
 
 
 
-   
+
 
 
 - **domain_analysis**: 
