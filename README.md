@@ -1,4 +1,4 @@
-# How Antibody Gene Families and Sequences Influence Antigen Targeting
+# Sequence-Based Clustering Reveals Gene Family Signatures, but Links to Antigen Remain Unclear
 
 # group04-team03:
 # Topic 04, Team 03: 
@@ -22,7 +22,7 @@ Research Question
 Our group´s goal was to explore the connection between antibody gene families and the antigen species they target. 
 To do so, we mainly focused on analysing the aminoacid sequence of respective structures, assigning variable domains and CDR regions. 
 With this approach we hoped to assing clusters to gene families, which target the same antigen species.
-As a last step, we also carried out domain analysis with Interpo scan. 
+As a last step, we also carried out domain analysis with InterProScan. 
 
 
 
@@ -54,23 +54,13 @@ Storing our diffrent approaches, we created three sub-folders, in **blasting** t
  - *light chains*: 
     all code for plots shown on the poster can be found in **light_results**
     the rest is stored in:**blasting/mmseqs/light_chains.ipynb**, **blasting/mmseqs/light_chains_analysis.ipynb** and**consensus_genfam_lightchains.ipynb** 
- 
-
-
-
-
-
 
 - **domain_analysis**: 
 This file contains the "Domain-Based Gene Family Analysis with InterProScan" which aims to detect short conserved amino acid motifs in domains of the light chain of immunoglobulins. And evaluates their association with gene family classification and antigen specificty.
 
-To create the charts used in the poster presentation only the files lchains_1_ipr.tsv and master_df_1_light_antigen_category.csv are nesessary, these and the charts are uploaded into our teams github repository.
+To create the charts used in the poster presentation the files lchains_1_ipr.tsv and master_df_1_light_antigen_category.csv are nesessary, these and the charts are uploaded into "../domain_analysis/results/..".
 
-To learn about the insights our results provide open the jupyter notebook domain_analysis in the blasting folder.
-
-
-TODO
-- Force push pictures
+To learn about code to create the charts and the insights our results provide open the jupyter notebook "../domain_analysis/script/domain_analysis.ipynb".
 
 - **Multiple Sequence Alignment**: 
 This folder includes all results based on Multiple Sequence Alignment. The goal of this section was to examine a potential correlation between the antigen species targeted by an antibody and the amino acid sequence of the antibody.
@@ -81,9 +71,6 @@ The files to generate the plots used on the poster have already been pushed, to 
  distance_matrix.ipynb - generates distance matrix based on MSA
  PCA_Clustering.ipynb - reduces dimensions of the distance matrix with PCA and then clusters the data using kmeans clustering
  antigen_sequence_correlation.ipynb - Analyzes the correlation between the MSA based clustering and the targeted antigen species
-
-
-
 
 
 
