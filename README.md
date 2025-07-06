@@ -89,10 +89,10 @@ The files to generate the plots used on the poster have already been pushed, to 
 Covering the mandatory aspects of the project
 ------------
 Our project was supposed to contain the following elements. Here, we list which sub-topic covers which mandatory aspect: 
-- **descriptive statistics** about the datasets: Comparability of p53 Datasets (Das müssen wir noch ändern lol)
+- **descriptive statistics** about the datasets: Domain Analysis (2.4, 2.5)
 - **graphical representations**: all sub-topics
-- **dimension reduction** analysis (PCA, clustering or k-means): Multiple Sequence Alignment
-- **statistical tests** (t-test, proportion tests etc): Domain analysis, Multiple Sequence Alignment
+- **dimension reduction** analysis (PCA, clustering or k-means): all sub-topics
+- **statistical tests** (t-test, proportion tests etc): all sub topics
 - We did not implement a **linear regression**, which we discussed with our tutor Enno Schäfer beforehand.
 
 
