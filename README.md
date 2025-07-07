@@ -60,7 +60,7 @@ This file contains the "Domain-Based Gene Family Analysis with InterProScan" whi
 
 To create the charts used in the poster presentation the files lchains_1_ipr.tsv and master_df_1_light_antigen_category.csv are nesessary, these and the charts are uploaded into "../domain_analysis/results/..".
 
-To learn about code to create the charts and the insights our results provide open the jupyter notebook "../domain_analysis/script/domain_analysis.ipynb".
+To learn about the code creating the charts and explaining the insights our results provide open the jupyter notebook "../domain_analysis/script/domain_analysis.ipynb" and take a specific look at section 2.6 and 2.7.
 
 - **Multiple Sequence Alignment**: 
 This folder includes all results based on Multiple Sequence Alignment. The goal of this section was to examine a potential correlation between the antigen species targeted by an antibody and the amino acid sequence of the antibody.
